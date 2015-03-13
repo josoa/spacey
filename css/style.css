@@ -58,8 +58,10 @@ header {
 	background-image: url('../svg/squig.svg');
 	background-repeat: no-repeat;
 	background-position: top;
-	background-size: 60%;
+	background-size: 80%;
+	overflow: auto;
 }
+
 
 /* NAVIGATION */
 
@@ -93,7 +95,7 @@ body {
 	font-size: 1em;
 }
 
-[space-text~="banner"]:before {
+[space-text~="earth"]:before {
 	background-image: url('../svg/earth.svg');
 	background-size: 1em 1em;
 	height: 1em;
@@ -101,7 +103,18 @@ body {
 	content: ' ';
 	display: inline-block;
 	margin-right: 25px;
-	}
+}
+
+[space-text~="about"]:before {
+	background-image: url('../svg/star.svg');
+	background-size: 1em 1em;
+	height: 1em;
+	width: 1em;
+	content: ' ';
+	display: inline-block;
+	margin-right: 25px;
+}
+
 
 [space-text~="banner"] {
 	font-family: 'Zeyada', cursive;
@@ -131,6 +144,7 @@ body {
 	font-size: 1em;
 	line-height: 1.7em;
 	padding-right: 75px;
+	margin-bottom: 25px;
 }
 
 /* COLORS 
