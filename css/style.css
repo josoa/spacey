@@ -19,7 +19,7 @@ a {
 
 .container {
 	max-width: 960px;
-	margin: 0 auto;
+	margin: 50px auto;
 }
 
 /* COLUMNS */
@@ -54,7 +54,11 @@ a {
 /* HEADER */
 
 header {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
+	background-image: url('../svg/squig.svg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 60%;
 }
 
 /* NAVIGATION */
@@ -70,11 +74,18 @@ header {
 	margin-right: 5px;
 } 
 
+[space-text~="nav"]:hover {
+	background-image: url('../svg/line.svg');
+	background-repeat: no-repeat;
+	background-size: 4em;
+	background-position: bottom;
+}
 
 /* TYPOGRAPHY */
 
 body {
-	font-size: 16px;
+	font-size: 18px;
+	color: #F7F4EF;
 }
 
 [space-text] {
@@ -107,9 +118,19 @@ body {
 	margin-right: 55px;
 	font-weight: 100;
 	font-size: 1.5em;
+	color: #F7F4EF;
+}
+
+[space-text~="title"] {
+	font-size: 1.5em;
+	line-height: 2.2em;
+	text-transform: uppercase;
 }
 
 [space-text~="chunk"] {
+	font-size: 1em;
+	line-height: 1.7em;
+	padding-right: 75px;
 }
 
 /* COLORS 
